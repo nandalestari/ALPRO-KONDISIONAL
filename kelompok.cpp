@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-	int jumlah, total, total1, diskon, menu, x;
+	int jumlah, total, total1, diskon, menu, x, ongkir;
 	float jarak;
 	char a, b, pilihan1;
 		cout << "           RUMAH MAKAN SEDERHANA\n ";
@@ -29,19 +29,22 @@ int main(){
 				cout << " Ongkir : 15000\n";
 				if (total > 25000){
 					cout << "Diskon Ongkir: 3000\n";
-					x = total-3000;
+					ongkir = 15000-3000;
+					x = total+ongkir;
 					cout << " Total : " << x << endl;
 				}
 				if (total > 50000){
 					cout << "Diskon Ongkir: 5000 + 15% Pembelian\n";
+					ongkir = 15000-5000;
 					diskon = total*15/100;
-					x = total-diskon-5000;
+					x = total + ongkir - diskon;
 					cout << " Total : " << x << endl;
 				}
 				if (total > 150000){
-					cout << "Diskon Ongkir: 8000 + 135% Pembelian\n";
-					diskon = total*35/100;
-					x = total-diskon-8000;
+					cout << "Diskon Ongkir: 8000 + 15% Pembelian\n";
+					ongkir = 15000-8000;
+					diskon = total*15/100;
+					x = total + ongkir - diskon;
 					cout << " Total : " << x << endl;
 				}
 			}
@@ -50,19 +53,22 @@ int main(){
 				cout << " Ongkir : 25000\n";
 				if (total > 25000){
 					cout << "Diskon Ongkir: 3000\n";
-					x = total-3000;
+					ongkir = 25000-3000;
+					x = total+ongkir;
 					cout << " Total : " << x << endl;
 				}
 				if (total > 50000){
 					cout << "Diskon Ongkir: 5000 + 15% Pembelian\n";
+					ongkir = 25000-5000;
 					diskon = total*15/100;
-					x = total-diskon-5000;
+					x = total + ongkir - diskon;
 					cout << " Total : " << x << endl;
 				}
 				if (total > 150000){
-					cout << "Diskon Ongkir: 8000 + 135% Pembelian\n";
-					diskon = total*35/100;
-					x = total-diskon-8000;
+					cout << "Diskon Ongkir: 8000 + 15% Pembelian\n";
+					ongkir = 25000-8000;
+					diskon = total*15/100;
+					x = total + ongkir - diskon;
 					cout << " Total : " << x << endl;
 				}
 			}
@@ -80,19 +86,22 @@ int main(){
 				cout << " Ongkir : 15000\n";
 				if (total > 25000){
 					cout << "Diskon Ongkir: 3000\n";
-					x = total-3000 ;
+					ongkir = 15000-3000;
+					x = total+ongkir;
 					cout << " Total : " << x << endl;
 				}
 				if (total > 50000){
 					cout << "Diskon Ongkir: 5000 + 15% Pembelian\n";
+					ongkir = 15000-5000;
 					diskon = total*15/100;
-					x = total-diskon-5000;
+					x = total + ongkir - diskon;
 					cout << " Total : " << x << endl;
 				}
 				if (total > 150000){
-					cout << "Diskon Ongkir: 8000 + 135% Pembelian\n";
-					diskon = total*35/100;
-					x = total-diskon-8000;
+					cout << "Diskon Ongkir: 8000 + 15% Pembelian\n";
+					ongkir = 15000-8000;
+					diskon = total*15/100;
+					x = total + ongkir - diskon;
 					cout << " Total : " << x << endl;
 				}
 			}
@@ -101,19 +110,22 @@ int main(){
 				cout << " Ongkir : 25000\n";
 				if (total > 25000){
 					cout << "Diskon Ongkir: 3000\n";
-					x = total-3000;
+					ongkir = 25000-3000;
+					x = total+ongkir;
 					cout << " Total : " << x << endl;
 				}
 				if (total > 50000){
 					cout << "Diskon Ongkir: 5000 + 15% Pembelian\n";
+					ongkir = 25000-5000;
 					diskon = total*15/100;
-					x = total-diskon-5000;
+					x = total + ongkir - diskon;
 					cout << " Total : " << x << endl;
 				}
 				if (total > 150000){
-					cout << "Diskon Ongkir: 8000 + 135% Pembelian\n";
-					diskon = total*35/100;
-					x = total-diskon-8000;
+					cout << "Diskon Ongkir: 8000 + 15% Pembelian\n";
+					ongkir = 25000-8000;
+					diskon = total*15/100;
+					x = total + ongkir - diskon;
 					cout << " Total : " << x << endl;
 				}
 			}
@@ -131,19 +143,22 @@ int main(){
 				cout << " Ongkir : 15000\n";
 				if (total > 25000){
 					cout << "Diskon Ongkir: 3000\n";
-					x = total-3000;
+					ongkir = 15000-3000;
+					x = total+ongkir;
 					cout << " Total : " << x << endl;
 				}
 				if (total > 50000){
 					cout << "Diskon Ongkir: 5000 + 15% Pembelian\n";
+					ongkir = 15000-5000;
 					diskon = total*15/100;
-					x =  total-diskon-5000;
+					x = total + ongkir - diskon;
 					cout << " Total : " << x << endl;
 				}
 				if (total > 150000){
-					cout << "Diskon Ongkir: 8000 + 135% Pembelian\n";
-					diskon = total*35/100;
-					x = total-diskon-8000;
+					cout << "Diskon Ongkir: 8000 + 15% Pembelian\n";
+					ongkir = 15000-8000;
+					diskon = total*15/100;
+					x = total + ongkir - diskon;
 					cout << " Total : " << x << endl;
 				}
 			}
@@ -152,19 +167,22 @@ int main(){
 				cout << " Ongkir : 25000\n";
 				if (total > 25000){
 					cout << "Diskon Ongkir: 3000\n";
-					x = total-3000;
+					ongkir = 25000-3000;
+					x = total+ongkir;
 					cout << " Total : " << x << endl;
 				}
 				if (total > 50000){
 					cout << "Diskon Ongkir: 5000 + 15% Pembelian\n";
+					ongkir = 25000-5000;
 					diskon = total*15/100;
-					x = total-diskon-5000;
+					x = total + ongkir - diskon;
 					cout << " Total : " << x << endl;
 				}
 				if (total > 150000){
-					cout << "Diskon Ongkir: 8000 + 135% Pembelian\n";
-					diskon = total*35/100;
-					x = total-diskon-8000;
+					cout << "Diskon Ongkir: 8000 + 15% Pembelian\n";
+					ongkir = 25000-8000;
+					diskon = total*15/100;
+					x = total + ongkir - diskon;
 					cout << " Total : " << x << endl;
 				}
 			}
@@ -183,19 +201,22 @@ int main(){
 				cout << " Ongkir : 15000\n";
 				if (total > 25000){
 					cout << "Diskon Ongkir: 3000\n";
-					x = total-3000;
+					ongkir = 15000-3000;
+					x = total+ongkir;
 					cout << " Total : " << x << endl;
 				}
 				if (total > 50000){
 					cout << "Diskon Ongkir: 5000 + 15% Pembelian\n";
+					ongkir = 15000-5000;
 					diskon = total*15/100;
-					x = total-diskon-5000;
+					x = total + ongkir - diskon;
 					cout << " Total : " << x << endl;
 				}
 				if (total > 150000){
-					cout << "Diskon Ongkir: 8000 + 135% Pembelian\n";
-					diskon = total*35/100;
-					x = total-diskon-8000;
+					cout << "Diskon Ongkir: 8000 + 15% Pembelian\n";
+					ongkir = 15000-8000;
+					diskon = total*15/100;
+					x = total + ongkir - diskon;
 					cout << " Total : " << x << endl;
 				}
 			}
@@ -204,19 +225,22 @@ int main(){
 				cout << " Ongkir : 25000\n";
 				if (total > 25000){
 					cout << "Diskon Ongkir: 3000\n";
-					x = total-3000;
+					ongkir = 25000-3000;
+					x = total+ongkir;
 					cout << " Total : " << x << endl;
 				}
 				if (total > 50000){
 					cout << "Diskon Ongkir: 5000 + 15% Pembelian\n";
+					ongkir = 25000-5000;
 					diskon = total*15/100;
-					x = total-diskon-5000;
+					x = total + ongkir - diskon;
 					cout << " Total : " << x << endl;
 				}
 				if (total > 150000){
-					cout << "Diskon Ongkir: 8000 + 135% Pembelian\n";
-					diskon = total*35/100;
-					x = total-diskon-8000;
+					cout << "Diskon Ongkir: 8000 + 15% Pembelian\n";
+					ongkir = 25000-8000;
+					diskon = total*15/100;
+					x = total + ongkir - diskon;
 					cout << " Total : " << x << endl;
 				}
 			}
@@ -234,19 +258,22 @@ int main(){
 				cout << " Ongkir : 15000\n";
 				if (total > 25000){
 					cout << "Diskon Ongkir: 3000\n";
-					x = total-3000;
+					ongkir = 15000-3000;
+					x = total+ongkir;
 					cout << " Total : " << x << endl;
 				}
 				if (total > 50000){
 					cout << "Diskon Ongkir: 5000 + 15% Pembelian\n";
+					ongkir = 15000-5000;
 					diskon = total*15/100;
-					x = total-diskon-5000;
+					x = total + ongkir - diskon;
 					cout << " Total : " << x << endl;
 				}
 				if (total > 150000){
-					cout << "Diskon Ongkir: 8000 + 135% Pembelian\n";
-					diskon = total*35/100;
-					x = total-diskon-8000;
+					cout << "Diskon Ongkir: 8000 + 15% Pembelian\n";
+					ongkir = 15000-8000;
+					diskon = total*15/100;
+					x = total + ongkir - diskon;
 					cout << " Total : " << x << endl;
 				}
 			}
@@ -255,19 +282,22 @@ int main(){
 				cout << " Ongkir : 25000\n";
 				if (total > 25000){
 					cout << "Diskon Ongkir: 3000\n";
-					 x = total-3000;
+					ongkir = 25000-3000;
+					x = total+ongkir;
 					cout << " Total : " << x << endl;
 				}
 				if (total > 50000){
 					cout << "Diskon Ongkir: 5000 + 15% Pembelian\n";
+					ongkir = 25000-5000;
 					diskon = total*15/100;
-					x = total-diskon-5000;
+					x = total + ongkir - diskon;
 					cout << " Total : " << x << endl;
 				}
 				if (total > 150000){
-					cout << "Diskon Ongkir: 8000 + 135% Pembelian\n";
-					diskon = total*35/100;
-					x = total-diskon-8000; 
+					cout << "Diskon Ongkir: 8000 + 15% Pembelian\n";
+					ongkir = 15000-8000;
+					diskon = total*15/100;
+					x = total + ongkir - diskon;
 					cout << " Total : " << x << endl;
 				}
 			}
